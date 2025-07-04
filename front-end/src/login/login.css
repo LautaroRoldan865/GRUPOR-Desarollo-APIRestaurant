@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/LOGIN.jpg');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección izquierda (imagen) */
+.left-section {
+  flex: 1;
+}
+
+/* Sección derecha (formulario) */
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulario */
+.form-container {
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #f05a00;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+
+.forgot {
+  align-self: center;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.gray-btn, .orange-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gray-btn {
+  background-color: #ccc;
+  color: black;
+}
+
+.orange-btn {
+  background-color: #f05a00;
+  color: white;
+}
+
+.gray-btn:hover {
+  background-color: #b3b3b3;
+}
+
+.orange-btn:hover {
+  background-color: #cc4400;
+}

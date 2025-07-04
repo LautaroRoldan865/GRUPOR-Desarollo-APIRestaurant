@@ -1,0 +1,15 @@
+
+
+.custom-navbar {
+  background-color: #b64913 !important; 
+  font-family: 'Segoe UI', sans-serif;  
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff !important;       
+  font-weight: 500;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #f0ad4e !important;         
+}

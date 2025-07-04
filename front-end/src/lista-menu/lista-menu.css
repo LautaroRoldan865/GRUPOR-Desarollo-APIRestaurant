@@ -1,0 +1,19 @@
+.fondoTabla {
+    display: flex;
+    width: 100vw;
+    font-size: 100%;
+    background-image: url("../img/CREARELEMENTO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+

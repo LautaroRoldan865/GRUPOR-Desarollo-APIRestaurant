@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<h1 class="title">
+    <img src="assets/images/logo.png" alt="Logo" class="logo">
+    <span>Modificar ítem de menú</span>
+</h1>
+<div class="rectangle">
+    <!--acá va todo el contenido-->
+    <div class="item-container">
+        <div class="item-image">
+            <img src="{{item.imageUrl}}" alt="Pizza Fugazzeta">
+        </div>
+
+        <div class="item-form">
+            <h2 class="item-title">
+                <input type="text" 
+                [disabled]="!item.editing"
+                [(ngModel)]="item.name">
+                <button class="edit-icon" (click)="toggleEdit(item)"><i class="fas fa-pencil"></i></button>
+            </h2>
+
+            <label for="descripcion">Descripción</label>
+            <textarea type="text" [(ngModel)]="item.description" id="descripcion">{{item.description}}</textarea>
+
+            <label for="precio">Precio: $</label>
+            <input type="number" [(ngModel)]="item.price" id="precio" value={{item.price}}>
+
+            <label for="url">URL de imagen:</label>
+            <input type="text" id="url" [(ngModel)]="item.imageUrl" value= {{item.imageUrl}}>
+
+            <div class="button-group">
+                <button class="gray-btn" (click)="Cancelar()">Cancelar</button>
+                <button class="orange-btn" (click)="editar()">Guardar cambios</button>
+            </div>
+        </div>
+  </div>
+</div>

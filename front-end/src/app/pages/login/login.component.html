@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left-section"></div>
+
+  <div class="right-section">
+    <div class="form-container">
+      <div class="logo">
+        <img src="../../../assets/images/logo.png" alt="" class="logo" />
+      </div>
+      <h2>Inicio de sesión</h2>
+
+      <form (ngSubmit)="login()">
+        <input type="text" [(ngModel)]="email" name="email" placeholder="Correo electrónico" />
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" />
+
+        <a class="forgot" href="#">¿Has olvidado tu contraseña?</a>
+
+        <div class="buttons">
+          <button class="gray-btn" type="button" (click)="registrar()">Crear cuenta</button>
+          <button class="orange-btn" type="submit">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

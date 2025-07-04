@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+    <html>
+<body>
+    <div class="rectangle">
+        
+    </div>
+    
+    <div class="contenedor">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="PH Logo" class="ph-logo"> 
+        </div>
+        <div class="crear-usuario-body">
+            
+            <h1 class="title">Crear Usuario</h1>
+            <div class="textoIngresoDatos">
+            <h4>Correo Electronico</h4>
+            <input type="text" [(ngModel)]="email" name="email">
+            </div>
+            
+            <div class="textoIngresoDatos">
+            <h4>Contraseña</h4>
+            <input type="password" [(ngModel)]="password" name="password">
+            </div>
+            
+            <div class="textoIngresoDatos">
+            <h4>Repetir Contraseña</h4>
+            <input type="password" [(ngModel)]="password2" name="password2">
+            </div>
+
+            <div class="botones">
+                <button class="botonAtras" (click)="login()">Atras</button>
+                <button class="botonCrear" (click)="crearUsuario()">Crear</button>
+            </div>
+            
+            
+        </div> 
+            
+        </div>
+      <div class="logo"> <img src="logo.png" alt=""></div> 
+</body>
+ 
+
+</html>

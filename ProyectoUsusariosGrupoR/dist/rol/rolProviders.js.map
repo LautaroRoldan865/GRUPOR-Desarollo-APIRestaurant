@@ -1,0 +1,1 @@
+{"version":3,"file":"rolProviders.js","sourceRoot":"","sources":["../../src/rol/rolProviders.ts"],"names":[],"mappings":";;;AACA,qDAAiD;AACjD,uDAAmD;AACnD,+CAA2C;AAG3C,yEAAsE;AACtE,yDAAsD;AACtD,mEAAiE;AAGpD,QAAA,UAAU,GAAC;IACpB,WAAW,EAAE,CAAC,8BAAa,CAAC;IAC5B,SAAS,EAAE,CAAC,wBAAU,EAAC,sCAAiB,CAAC;IACzC,QAAQ,EAAE,CAAC,sBAAS,EAAC,wBAAU,EAAC,mCAAgB,CAAC;CACpD,CAAA"}

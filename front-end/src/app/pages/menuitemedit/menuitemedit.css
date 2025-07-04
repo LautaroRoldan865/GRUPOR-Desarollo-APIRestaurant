@@ -1,0 +1,245 @@
+/* ================== TÍTULO Y LOGO ================== */
+
+.title {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    width: 100%;            
+    margin-top: 15px;
+    margin: 15px auto 20px auto; 
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.title span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #dd6117;
+    text-shadow: 2px 2px 5px gray;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* ================== CONTENEDORES PRINCIPALES ================== */
+
+.rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(237, 90, 0, 0.33);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+/* ================== IMAGEN ================== */
+
+.item-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #b64913;
+}
+
+
+/* ================== FORMULARIO ================== */
+
+.item-form {
+    flex-grow: 1;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* ========== TÍTULO EDITABLE ========== */
+.item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.item-title input[type="text"] {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #b64913;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px 12px;
+    box-shadow: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+}
+
+.item-title input[type="text"]:not([disabled]) {
+    background-color: white;
+    border: 1px solid #5e5e5e;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ========== ICONO DE EDICIÓN ========== */
+
+.item-title .edit-icon,
+.edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 20px;
+    color: black;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
+
+
+/* ========== ICONO DE EDICIÓN ========== */
+
+.item-title .edit-icon,
+.edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    color: black;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+}
+
+.edit-icon {
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 50px;
+    box-shadow: none;
+    color: inherit;
+}
+.edit-icon i {
+  color: #b64913; 
+}
+
+/* ================== CAMPOS DE FORMULARIO ================== */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+textarea,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5e5e5e;
+    border-radius: 8px;
+    resize: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    height: 80px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* ================== BOTONES ================== */
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gray-btn,
+.orange-btn {
+    text-align: center;
+    border: none;
+    width: 130px;
+    padding: 0.35rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gray-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.orange-btn {
+    background-color: #f05a00;
+    color: white;
+}
+
+.gray-btn:hover {
+    background-color: #b3b3b3;
+}
+
+.orange-btn:hover {
+    background-color: #cc4400;
+}
+
+.gray-btn:active,
+.orange-btn:active {
+    transform: scale(0.96);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}

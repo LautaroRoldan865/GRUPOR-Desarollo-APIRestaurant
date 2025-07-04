@@ -1,0 +1,229 @@
+body{
+    background-color: #b8b2b2;
+}
+
+.fondo{
+    background-color: #b8b2b2;
+    display: flex;
+    min-height: 93vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.centro {
+
+    /*background-color: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);*/
+    margin: 1% 2%; 
+    padding: 20px; 
+    /*border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-grow: 0; 
+    flex-shrink: 1; 
+    flex-basis: auto; /*el tamaño inicial se basa en el contenido */
+    height: auto;
+    max-height: none; 
+    overflow: visible; 
+}
+.textologo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    margin-top: 1%;
+}
+
+
+
+/* Estilos para la imagen del logo (el <img class="logo">) */
+.logo {
+  
+    height: 50px; 
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    width: 4%;
+    height: auto;
+  
+}
+
+/* Estilos para el texto del título (el <span> dentro del h1.title) */
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ed5a00;
+    text-shadow: 1px 1px 3px gray;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.btn-restaurant {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: 10px; 
+  cursor: pointer;
+  color: #ed5a00; 
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.btn-restaurant:hover {
+  color: #ff7f2a; 
+}
+
+/*tabla diseño*/
+table{
+    width: 90%;
+    table-layout: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #c6d8fa;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 0.75rem; 
+    overflow: hidden; 
+}
+
+
+th {
+    background-color: #eb5900;
+    padding: 10px;
+    font-weight: bold;
+    width: 150px; /* o el valor que prefieras */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;   
+}
+/*
+td {
+    padding: 10px;
+    border: 1px solid black;
+    width: 100px;        
+    height: 10px;
+}*/
+.botones-accion button {
+  background: none; 
+  border: none; 
+  padding: 1; 
+  margin: 0; 
+  cursor: pointer; 
+  color: black; 
+  font-size: 1.2em; 
+  text-decoration: none; 
+}
+
+.botones-accion{
+    width: 0%;
+    white-space: nowrap;
+ 
+    align-items: center;
+}
+
+.botones-accion a{
+    margin-left: 5px;
+    margin-right: 10px;
+    color: inherit;
+    text-decoration: none;    
+}
+
+.botones-accion a:hover{
+    margin-left: 5px;
+    margin-right: 10px;
+    color: gray;
+    text-decoration: none;    
+}
+
+.acciones-tabla a:last-child {
+    margin-right: 0;
+}
+.botones-accion a i{
+    font-size: 120%;
+}
+.img-cell {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.img-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.btn{
+    border-radius: 100%;
+    background-color: #eb5900;
+    text-decoration: #cfe2ff;
+    width: 40px;
+    height: 40px;
+}
+.btn:hover{
+    background-color: #c14a00; 
+}
+
+/*esto centra los botones de paginacion*/
+.paginacion{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginacion input[type="radio"]{
+    display: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.paginacion label{
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 50%;
+    border: 1px solid #c14a00;
+    color: #c14a00;
+    background-color: #ffffff54;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40px;
+    height: 40px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #eb5900;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+input[type="radio"]:checked +label:hover{
+    background-color: #c14a00;
+    
+}
+
+input[type="radio"]+label:hover{
+    background-color: #c14a00af;
+    color: white;
+}

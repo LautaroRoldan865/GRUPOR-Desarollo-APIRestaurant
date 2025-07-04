@@ -1,0 +1,249 @@
+/* Asegura que el body de este componente ocupe toda la pantalla y centre el contenido */
+.crearmenu.body { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #d9d9d9; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    width: 100%;            
+    margin-top: 15px;
+    margin: 15px auto 20px auto; 
+    margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del logo (el <img class="logo">) */
+.logo {
+    width: 50px;
+    height: 50px; 
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+  
+}
+
+/* Estilos para el texto del título (el <span> dentro del h1.title) */
+.title span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ed5a00;
+    text-shadow: 1px 1px 3px gray;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+textarea,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5e5e5e;
+    border-radius: 8px;
+    resize: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS para el contenedor principal que envuelve todo (el naranja) */
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;    
+    width: 90%; 
+    max-width: 900px; 
+    margin: 0 auto;    
+    padding: 20px; 
+    flex-grow: 1; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(237,90,0,0.33); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Sección izq (formulario) */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos del formulario (labels e inputs) */
+    flex-shrink: 0; 
+    
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espacio entre inputs */
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 30px; 
+}
+
+
+input {
+    display: block;
+    width: 100%; /* **CAMBIO CLAVE: Usa 100% para ser responsive** */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: border-box; /* Fundamental para que padding y border no aumenten el ancho */
+    /* QUITA LOS ESTILOS INLINE DE HTML */
+    height: 30px; /* Mantenemos una altura fija para consistencia visual */
+}
+input:focus {
+    border-color: #6a0dad;
+    outline: none;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+/* Botones */
+
+.gray-btn, .orange-btn {
+    text-align: center;
+    border: none;
+    width: 130px;
+    padding: 0.35rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0; /* Evita que los botones se encojan */
+    text-decoration: none; 
+}
+
+.gray-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.orange-btn {
+    background-color: #f05a00;
+    color: white;
+}
+
+.gray-btn:hover {
+    background-color: #b3b3b3;
+}
+
+.orange-btn:hover {
+    background-color: #cc4400;
+}
+
+.gray-btn:active,
+.orange-btn:active {
+    transform: scale(0.96);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.item-image {
+    display: flex; /* Para centrar la imagen dentro de su contenedor */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-grow: 1; /* Permite que el contenedor de la imagen crezca */
+    margin-left: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+.item-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px; /* Cuadrado redondeado */
+    border: 6px solid #b64913;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .crearmenu.body {
+        flex-direction: column; /* Apila el título y el rectángulo */
+    }
+
+    .rectangle {
+        flex-direction: column; /* Apila el formulario y la imagen */
+        padding: 15px;
+        width: 95%; /* Ocupa más ancho en pantallas pequeñas */
+        margin-top: 10px; /* Pequeño margen superior si se apila */
+        min-height: auto; /* Deja que la altura se ajuste al contenido */
+        max-height: none; /* Deshabilita el max-height para que se ajuste */
+    }
+
+    .container {
+        flex-direction: column; /* Apila el formulario y la imagen si no caben */
+        width: 100%; /* Ocupa el 100% del ancho del rectángulo */
+    }
+
+    .form-container {
+        margin-left: 0;
+        max-width: none; /* Elimina la limitación de ancho para que ocupe todo */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .item-image {
+        margin-left: 0;
+        margin-top: 20px; /* Espacio entre el formulario y la imagen apilada */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .item-image img {
+        width: 200px; /* Reduce un poco el tamaño de la imagen en móvil */
+        height: 200px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch; /* Estira los botones para que ocupen todo el ancho */
+        gap: 15px; /* Menos espacio entre botones apilados */
+    }
+
+    .gray-btn, .orange-btn {
+        width: 100%; /* Botones de ancho completo */
+        font-size: 1rem;
+    }
+
+    .title span {
+        font-size: 28px; /* Título más pequeño en móvil */
+    }
+}
+
+/* Muy pequeñas, si aún hay problemas */
+@media (max-width: 480px) {
+    .rectangle {
+        padding: 10px;
+    }
+    .form-container {
+        padding: 5px;
+    }
+}

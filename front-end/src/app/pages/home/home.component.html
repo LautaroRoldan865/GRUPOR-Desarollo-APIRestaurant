@@ -1,0 +1,27 @@
+<div class="container py-5">
+  <!-- Título -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold">Explorá las mejores opciones</h1>
+    <p class="text-muted">Descubrí lo más pedido cerca tuyo</p>
+  </div>
+
+  <!-- Grid de Cards -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- permite iterar la lista y repetir los elementos-->
+    @for(item of items;track $index){
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img [src]="item.imageUrl" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text text-muted">{{ item.description }}</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <button class="btn btn-primary w-100">Ver más</button>
+        </div>
+      </div>
+    </div>
+    }
+
+  </div>
+</div>

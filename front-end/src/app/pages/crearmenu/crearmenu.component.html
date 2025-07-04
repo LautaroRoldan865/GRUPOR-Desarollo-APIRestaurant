@@ -1,0 +1,42 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Menú</title>
+ 
+</head>
+<body class="crearmenu"> <!-- Asegúrate de que la clase "crearmenu" esté aquí -->
+
+    <h1 class="title">
+        <img src="../../../assets/images/logo.png" alt="Logo" class="logo">
+        <span>Crear menú</span>
+    </h1>
+
+    <div class="rectangle">
+        <div class="container">
+            <div class="form-container">
+                <label class="negrita">Nombre: </label>
+                <input type="text" class="form-control" [(ngModel)]="name" name="name" >
+
+                <label class="negrita">Descripción: </label>
+                <input type="text" class="form-control"[(ngModel)]="description" name="description">
+
+                <label class="negrita">Precio: </label>
+                <input type="number" class="form-control" [(ngModel)]="price" name="price">
+
+                <label class="negrita">URL de imagen: </label>
+                <input type="text" class="form-control" [(ngModel)]="imageUrl" name="imageUrl">
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="gray-btn" (click)="home()">Cancelar</button>
+                    <button class="orange-btn" (click)="registrarMenu()">Registrar menú</button>
+                </div>
+            </div>
+            <div class="item-image">
+                <img src="../../../assets/images/chef-menu.png" alt="Chef de menú">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

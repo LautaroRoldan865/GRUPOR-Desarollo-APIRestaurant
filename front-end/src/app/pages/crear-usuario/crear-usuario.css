@@ -1,0 +1,146 @@
+body {
+    background-image: url('../../../assets/images/fondo-crear-usuario.jpg'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh; /* Use min-height for better content adaptability */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default body margin */
+}
+
+input {
+  margin-top: 3px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+.rectangle {
+  position:absolute;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; /* Centra el div horizontalmente y verticalmente */
+  width: 50%;
+  height: 65%;
+  background-color: #ffffff; /* Fondo blanco con opacidad */
+  opacity: 0.9;
+  border-radius: 80px;
+  z-index: 1;
+}
+.logo-container {
+    position: absolute;
+    top: 15px; /* Adjust as needed to position above the rectangle */
+    left: 350px; /* Adjust as needed */
+    width: 100px; /* Size of the logo container */
+    height: 100px; /* Size of the logo container */
+    border-radius: 50%;
+    background-color: #f05a00; /* Background color of the PH circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ph-logo {
+    width: 70px; /* Size of the actual logo image */
+    height: 70px;
+    object-fit: contain; /* Ensures the image fits without distortion */
+}
+.contenedor {
+  position: relative;
+  z-index: 3;
+}
+.crear-usuario-body {
+  margin-top: 8.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}	
+.crear-usuario-body input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.crear-usuario-body h1 {
+  font-size: 3rem;
+  color: #f16101;
+  margin-top: 2px;
+}
+.crear-usuario-body h4 {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.textoIngresoDatos {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align:center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0.9rem;}
+.botonAtras:hover {
+  background-color: #b3b3b3;}
+.botonCrear:hover {
+  background-color: #cc4400;}
+.botonAtras:active,
+.botonCrear:active {
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);}
+.botonAtras{
+    background-color: #ccc;
+    text-align: center;
+    color: black;
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;}
+.botonCrear{
+    background-color: #f05a00;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;}
+
+
+.negrita{
+    font-weight: bold;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #dd6117;
+    text-shadow: 1px 1px 3px gray;
+    font-family: 'Arial', sans-serif;
+
+}

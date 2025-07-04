@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/home" ><i class="fas fa-home"></i></a>
+    <a class="navbar-brand" href="/crearmenu"><i class="fas fa-plus"></i> Agregar nuevo menú</a>
+    <a class="navbar-brand" href="/login"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+  </div>
+</nav>
+
+
+@if(isLoading()){ 
+<!-- Modal de carga -->
+<div class="modal fade show d-block loading-modal-backdrop" tabindex="-1" role="dialog" style="z-index: 1050;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loading-modal-content text-center p-4 border-0 shadow-lg">
+      <div class="d-flex flex-column align-items-center">
+        <!--spinner mejorado -->
+        <div class="spinner-border text-primary mb-3 loading-spinner" role="status" style="width: 4rem; height: 4rem;">
+          <span class="visually-hidden">Cargando...</span>
+        </div>
+        <!--texto -->
+        <h5 class="modal-title loading-modal-title mb-0">Cargando la página...</h5>
+        <small class="text-muted loading-modal-subtitle mt-2">Por favor, espere un momento</small>
+      </div>
+    </div>
+  </div>
+</div>
+}
+
+<router-outlet></router-outlet>

@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #d9d9d9;
+
+	
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.swal2-shadow {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.swal2-border-radius {
+  border-radius: 12px;
+}
+
+.swal2-title-custom {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.swal2-popup {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.text-class{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-confirm {
+	font-family: Arial, Helvetica, sans-serif;
+  background-color: #ed5a00 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 600;
+  padding: 10px 20px !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-confirm:hover {
+  background-color: #ed5b009c !important;
+}
+
+.btn-cancel {
+	font-family: Arial, Helvetica, sans-serif;
+  background-color: #616161 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 600;
+  padding: 10px 20px !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #b3b3b3 !important;
+}
+
+.swal2-title-success {
+	font-family: Arial, Helvetica, sans-serif;
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn-confirm, .btn-cancel {
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: 14px 30px !important; /* Más espacio adentro */
+  font-weight: 600;
+  border-radius: 6px !important;
+  border: none !important;
+  margin: 0 12px !important; /* Separación entre botones */
+  transition: background-color 0.3s ease;
+}
+
+/*esto es para el modal de carga*/
+/* Fondo semitransparente */
+.loading-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor modal */
+.loading-modal-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Spinner */
+.loading-spinner {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+
+/* Título */
+.loading-modal-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* Subtítulo */
+.loading-modal-subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6c757d; /* gris muted */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
