@@ -12,7 +12,7 @@ Práctico de Desarrollo de una API para la gestion de menus en un restaurante, D
 
 *Referencia Rápida*
 
-## **Mantenido por Grupo 09**
+## **Mantenido por Grupo R**
 ### **Integrantes:**
 - Maggi, Mateo David.
 - Pereyra Argüello, Milagros.
